@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AFF6E40"
+    tools:context=".sign">
+
+    <!-- خلفية بتدرج لوني مباشر داخل ImageView -->
+
+
+    <!-- العنوان -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="إنشاء حساب جديد"
+        android:textColor="#FF6E40"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- اسم المستخدم -->
+    <EditText
+        android:id="@+id/etNewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F5F5F5"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif"
+        android:hint="اسم المستخدم"
+        android:padding="14dp"
+        android:textColor="#004D40"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- البريد الإلكتروني -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F5F5F5"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif"
+        android:hint="البريد الإلكتروني"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textColor="#004D40"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNewUsername" />
+
+    <!-- كلمة المرور -->
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F5F5F5"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:textColor="#004D40"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <!-- زر تسجيل -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#26C6DA"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="14dp"
+        android:text="تسجيل"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNewPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

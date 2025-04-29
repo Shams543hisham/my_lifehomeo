@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="48dp"> <!-- زيادة المسافة العلوية -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- عنوان باقات السياحة الدولية -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تطبيق خادم أفراد المنزل"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center"
+            android:paddingBottom="32dp" />
+
+        <!-- باقة 1 - تايلند -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/lg"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="إدارة المستخدمين"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="حسابات متعددة: لكل فرد من أفراد الأسرة والعاملين في المنزل.
+صلاحيات مختلفة: مثل صلاحيات المالك (الأب/الأم)، وصلاحيات العاملين (المساعد المنزلي، السائق، المربية).
+إمكانية تسجيل الدخول بالبصمة أو التعرف على الوجه للحفاظ على الخصوصية."
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp" />
+
+                <Button
+                    android:id="@+id/btnThailandDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التفاصيل"
+                    android:backgroundTint="#6200EE"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- باقة 2 - ماليزيا -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/nbvf"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="إدارة المهام والجدولة"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="جدولة الأعمال المنزلية: مثل التنظيف، الغسيل، الطهي، الصيانة.
+إشعارات وتذكيرات: لإعلام أفراد الأسرة أو العاملين بالمواعيد والمهام اليومية.
+إمكانية تخصيص المهام: لكل مستخدم حسب دوره."
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp" />
+
+                <Button
+                    android:id="@+id/btnMalaysiaDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التفاصيل"
+                    android:backgroundTint="#6200EE"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- باقة 3 - المالديف -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/nm"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="صورة لرحلة إلى المالديف" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التواصل الداخلي والملاحظات"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نظام دردشة أو رسائل داخلية بين أفراد الأسرة والعاملين وإرسال تعليمات مكتوبة أو صوتية لإنجاز المهام وإمكانية ترك ملاحظات على المهام مثل يرجى تنظيف الغرفة بحذر."
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp" />
+
+                <Button
+                    android:id="@+id/btnMaldivesDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التفاصيل"
+                    android:backgroundTint="#6200EE"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- باقة 4 - جورجيا -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/obg"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المكتبة"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="لقراءة الكتب المفضلة في المنزل والالكترونية"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp" />
+
+                <Button
+                    android:id="@+id/gorgia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الذهاب الى المكتبة"
+                    android:backgroundTint="#6200EE"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- زر للانتقال إلى صفحة الرحلات الداخلية -->
+        <Button
+            android:id="@+id/btnInternalTrips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التواصل  "
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
